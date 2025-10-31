@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Me - Samuel Pudinyane</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Learn more about Samuel Tiisetso Pudinyane - Software Engineer with expertise in web development and cloud technologies." />
+    <script src="personal.js" defer></script>
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<div x-data="data"> 
+    <div class="container">
+       <div class="aside">
+        <div class="img">
+            <img src="images/profile.JPG">
+        </div>
+        <div>
+            <h1 x-text="username"></h1>
+        </div>
+        <div class="sidebar">
+            <div class="menuList">
+                <ul class="list">
+                    <li><button class="btn1" @click="home"><i class="fas fa-home" aria-hidden="true"></i> Home</button></li>
+                    <li><button class="btn1 active"><i class="fas fa-user" aria-hidden="true"></i> About Me</button></li>
+                    <li><button class="btn1" @click="personal_projects"><i class="fas fa-cogs" aria-hidden="true"></i> Projects</button></li>
+                    <li><button class="btn1" @click="contacts"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</button></li>
+                </ul>
+            </div>
+            <div class="links">
+                    <div class="icon"><a href="https://www.linkedin.com/in/samueltiisetsopudinyane-a2118b185/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></div>
+                    <div class="icon"><a href="https://github.com/SamuelPudinyane?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></div>
+                    <div class="icon"><a href="https://api.whatsapp.com/send?phone=+27671563780" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></div>
+            </div>
+        </div>
+       </div>
+        
+        <div class="section">
+            <div class="about-content">
+                <h1 class="welcome">About Me <i class="fas fa-user" aria-hidden="true"></i></h1>
+                <div class="about-text">
+                    <p x-text="aboutMe_p1" class="about-paragraph"></p>
+                    <p x-text="aboutMe_p2" class="about-paragraph"></p>
+                    <p x-text="aboutMe_p3" class="about-paragraph"></p>
+                </div>
+                <div class="skills-section">
+                    <h3>Technical Skills & Certifications</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Microsoft Azure Fundamentals</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Azure AI Fundamentals</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Data Fundamentals</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript (FreeCodeCamp)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button @click="contacts" class="cta-button">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
+  </body>
+</html>

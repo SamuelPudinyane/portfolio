@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Samuel Pudinyane - Software Engineer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Samuel Tiisetso Pudinyane - Software Engineer with expertise in web development, cloud technologies, and desktop applications." />
+    <meta name="keywords" content="Samuel Pudinyane, Software Engineer, Web Developer, Portfolio, Cloud Computing, Azure" />
+    <meta name="author" content="Samuel Tiisetso Pudinyane" />
+    <script src="personal.js" defer></script>
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<div x-data="data"> 
+    <div class="container">
+       <div class="aside">
+        <div class="img">
+            <img src="images/profile.JPG">
+        </div>
+        <div>
+            <h1 x-text="username"></h1>
+        </div>
+        <div class="sidebar">
+            <div class="menuList">
+                <ul class="list">
+                    <li><button class="btn1 active"><i class="fas fa-home" aria-hidden="true"></i> Home</button></li>
+                    <li><button class="btn1" @click="personal_about"><i class="fas fa-user" aria-hidden="true"></i> About Me</button></li>
+                    <li><button class="btn1" @click="personal_projects"><i class="fas fa-cogs" aria-hidden="true"></i> Projects</button></li>
+                    <li><button class="btn1" @click="contacts"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</button></li>
+                </ul>
+            </div>
+            <div class="links">
+                    <div class="icon"><a href="https://www.linkedin.com/in/samueltiisetsopudinyane-a2118b185/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></div>
+                    <div class="icon"><a href="https://github.com/SamuelPudinyane?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></div>
+                    <div class="icon"><a href="https://api.whatsapp.com/send?phone=+27671563780" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></div>
+            </div>
+        </div>
+       </div>
+        
+        <div class="section">
+            <div class="hero-content">
+                <h1 class="welcome">Welcome! <i class="fas fa-handshake" aria-hidden="true"></i></h1>
+                <h2 class="intro">I'm <span class="name" x-text="fullName"></span></h2>
+                <p class="tagline">Software Engineer | Cloud Enthusiast | Problem Solver</p>
+                <div class="btn">
+                    <button @click="contacts" class="cta-button">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
+  </body>
+</html>

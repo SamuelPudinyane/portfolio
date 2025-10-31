@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projects - Samuel Pudinyane</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Explore Samuel Tiisetso Pudinyane's software development projects and portfolio." />
+    <script src="personal.js" defer></script>
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<div x-data="data"> 
+    <div class="container">
+       <div class="aside">
+        <div class="img">
+            <img src="images/profile.JPG">
+        </div>
+        <div>
+            <h1 x-text="username"></h1>
+        </div>
+        <div class="sidebar">
+            <div class="menuList">
+                <ul class="list">
+                    <li><button class="btn1" @click="home"><i class="fas fa-home" aria-hidden="true"></i> Home</button></li>
+                    <li><button class="btn1" @click="personal_about"><i class="fas fa-user" aria-hidden="true"></i> About Me</button></li>
+                    <li><button class="btn1 active"><i class="fas fa-cogs" aria-hidden="true"></i> Projects</button></li>
+                    <li><button class="btn1" @click="contacts"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</button></li>
+                </ul>
+            </div>
+            <div class="links">
+                    <div class="icon"><a href="https://www.linkedin.com/in/samueltiisetsopudinyane-a2118b185/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></div>
+                    <div class="icon"><a href="https://github.com/SamuelPudinyane?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></div>
+                    <div class="icon"><a href="https://api.whatsapp.com/send?phone=+27671563780" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></div>
+            </div>
+        </div>
+       </div>
+        
+        <div class="section">
+            <div class="projects-content">
+                <h1 class="welcome">My Projects <i class="fas fa-cogs" aria-hidden="true"></i></h1>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><i class="fas fa-globe"></i> Personal Responsive Webpage</h3>
+                        </div>
+                        <div class="project-content">
+                            <p>A responsive personal website built using Bootstrap and Materialize frameworks across two different HTML implementations, showcasing modern web design principles.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">Materialize</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://tiisetsopudinyane.github.io/responsive_webpages/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Tiisetsopudinyane/responsive_webpages" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><i class="fas fa-shopping-cart"></i> Pizza Cart Application</h3>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-gallery">
+                                <img src="images/pizza1.png" alt="Pizza Cart Interface" class="project-image">
+                                <img src="images/pizza2.png" alt="Pizza Cart Features" class="project-image">
+                                <img src="images/pizza3.png" alt="Pizza Cart Checkout" class="project-image">
+                            </div>
+                            <p>Interactive pizza ordering system built with Alpine.js, featuring API integration, dynamic cart management, and responsive design.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Alpine.js</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API Integration</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://tiisetsopudinyane.github.io/Pizza-Cart-API/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Tiisetsopudinyane/Pizza-Cart-API" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3><i class="fas fa-shield-alt"></i> Security Access Control System</h3>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-gallery">
+                                <img src="images/sac1.png" alt="Security System Dashboard" class="project-image">
+                                <img src="images/sac2.png" alt="Access Control Panel" class="project-image">
+                                <img src="images/sac3.png" alt="Security Management" class="project-image">
+                            </div>
+                            <p>Digitalized security access control system built as a desktop application using C#. Features comprehensive user management, access logging, and security monitoring.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">.NET Framework</span>
+                                <span class="tech-tag">WinForms</span>
+                                <span class="tech-tag">Database</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Tiisetsopudinyane/Security-Access-Control" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <button @click="contacts" class="cta-button">Discuss a Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
+  </body>
+</html>
